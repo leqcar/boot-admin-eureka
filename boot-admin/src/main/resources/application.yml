@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: boot-admin
+
+server.port: 9091
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9761/eureka}
+
+security:
+  user:
+    name: admin
+    password: adminadmin

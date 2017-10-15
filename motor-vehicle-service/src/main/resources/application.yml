@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: motor-vehicle-service
+  boot:
+    admin:
+      url: http://localhost:9091
+      username: admin
+      password: adminadmin
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9761/eureka}
+
+
+#management:
+#  security:
+#    enabled: false
